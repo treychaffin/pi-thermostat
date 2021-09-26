@@ -26,12 +26,14 @@ Add (wpa_supplicant file)[https://www.raspberrypi.org/documentation/computers/co
 
 ssh into pi, change default password
 
-> sudo apt update
-> sudo apt upgrade
-> sudo apt-get install python3-pip python3-flask
-> sudo pip install flask
-> sudo python3 -m pip install --upgrade pip setuptools wheel
-> sudo pip3 install Adafruit_DHT
+```
+sudo apt update
+sudo apt upgrade
+sudo apt-get install python3-pip python3-flask
+sudo pip install flask
+sudo python3 -m pip install --upgrade pip setuptools wheel
+sudo pip3 install Adafruit_DHT
+```
 
 ## Wiring
 
