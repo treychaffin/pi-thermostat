@@ -1,12 +1,10 @@
-# Simple Raspberry Pi Relay Control
+# Thermostat
 
-Project uses a Raspberry Pi Zero W and a 3.3 volt relay module
+Project uses a Raspberry Pi Zero W, 3.3 volt relay module, and a DHT22 temperature and humidity sensor
 
 Relay module used: [link](https://www.aliexpress.com/item/4000480944773.html?spm=a2g0s.9042311.0.0.547c4c4dJpZ0KU)
 
-Code adapted from [this](https://randomnerdtutorials.com/raspberry-pi-web-server-using-flask-to-control-gpios/) tutorial
-
-## Raspberry Pi zero w setup
+## Raspberry Pi Zero W Setup
 
 Install [Raspberry-pi imager](https://www.raspberrypi.org/software/)
 
@@ -22,7 +20,7 @@ Select "Write"
 
 Add a blank file named "ssh" with no extensions
 
-Add (wpa_supplicant file)[https://www.raspberrypi.org/documentation/computers/configuration.html#configuring-networking31]. 
+Add [wpa_supplicant file](https://www.raspberrypi.org/documentation/computers/configuration.html#configuring-networking31). 
 
 ssh into pi, change default password
 
@@ -38,6 +36,13 @@ sudo pip3 install Adafruit_DHT
 ## Wiring
 
 [raspberry pi pinout diagram](https://pinout.xyz/#)
+
+![wiring diagram](/pi-zero-thermostat_bb.png)
+
+| Signal Pins | |
+| --- | --- |
+| DHT 22 | GPIO 4 |
+| RELAY | GPIO 17 |
 
 <!-- | Raspberry Pi | Relay | 
 | --- | --- | 
